@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wordle</title>
+    <style>
+      body {
+        text-align: center; /* center everything */
+        background-color: aquamarine;
+      }
+      form {
+        display: flex; /* use flexbox */
+        flex-direction: column;
+        justify-content: center; /* center vertically */
+        align-items: center; /* center horizontally */
+      }
+      /* CSS */
+
+.guessed-words {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 200px;
+  margin-left: 650px;
+  background-color: beige;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>Wordle</h1>
+    <p>Guess the word in 6 attempts or less.</p>
+    <!-- HTML -->
+
+<div id="guessed-words-container">
+    <h2>Guessed Words</h2>
+    <ul id="guessed-words" class="guessed-words"></ul>
+  </div>
+  
+    <form id="wordle-form">
+      <label for="word-input">Enter a word:</label>
+      <input type="text" id="word-input" required style="border: 2px solid black; border-radius: 10px; background-color: beige;">
+      <button type="submit" style="border: 2px solid green; background-color: greenyellow;">Guess</button>
+    </form>
+    <!-- HTML -->
+  
+    <script src="wordle.js"></script>
+  </body>
+</html>
