@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDPR Consent</title>
+</head>
+<body>
+    <h1>Dear <i>User</i></h1>
+
+    <p style="width: 800px;">We value your privacy and want to make sure you understand how we collect and use your personal data. In accordance with the General Data Protection Regulation (GDPR), we need your consent before we can process your personal data.
+<br>
+We may collect and process the following types of personal data:
+<br>
+<br>
+<b>1.</b> Contact information, such as your name, email address, and phone number.
+<b>2.</b>Demographic information, such as your age, gender, and location.
+<b>3.</b>Usage information, such as your browsing history and interactions with our website.
+<b>4.</b>Technical information, such as your IP address, device information, and browser type.
+<b>5.</b>We collect this information to improve our website and provide you with a better user experience. We do not share your personal data with third parties unless required by law.
+<br>
+<br>
+By agreeing, you consent to our collection and processing of your personal data as described above. You can withdraw your consent at any time by contacting us at <a href="mailto:applehelper06@gmail.com">Coral Incompany</a>.
+<br>
+<br>
+Thank you for your trust and support.
+<br>
+<br>
+Sincerely, <i>Coral Incompany</i>
+<br>
+<br>
+You can leave after clicking "I agree"</p> 
+<button id="consent-btn" style="text-decoration: none; color: white; background-color: darkgreen; border: 3px solid lightgreen; border-radius: 10px; padding: 10px; font-weight: bolder;">I agree</button>
+
+<script>
+    document.getElementById("consent-btn").addEventListener("click", function() {
+    // function code goes here
+});
+document.getElementById("consent-btn").addEventListener("click", function() {
+    localStorage.setItem("consent", "true");
+});
+if (localStorage.getItem("consent") === "true") {
+    // execute code that requires user consent
+} else {
+    // execute code that does not require user consent
+}
+</script>
+</body>
+</html>
